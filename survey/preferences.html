@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Optimal Survey Preferences</title>
+
+    <script src="functions.js" defer></script>
+    
+    <script>
+        window.onload = function() {
+            var num_radio = 4;
+            var table = document.getElementById("preferenceTable");
+            var tableCells = 5;
+            createPrefers(table, num_radio, tableCells);
+            preferences(num_radio);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="trapezoid"></div>
+    <div class="outline">
+
+        <div class="child">
+            <h1>Preferred Teammates</h1>
+            <div class="instruct">
+                <h3>Introduction</h3>
+                <p>Now it is time to pick your top preferred teammates. You may pick up to four teammates. 
+                    If you have no preferences, click the next button at the bottom.
+                </p>
+            </div>
+            <div class="tableP">
+                <table id="preferenceTable">
+                    <tr>
+                        <th></th>
+                        <th>1<sup>st</sup></th>
+                        <th>2<sup>nd</sup></th>
+                        <th>3<sup>rd</sup></th>
+                        <th>4<sup>th</sup></th>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Next button -->
+            <div class="nextGroup">
+                <button onclick="switchWindow(event)" class="next-bttn" type="submit" id="nextBttn">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
