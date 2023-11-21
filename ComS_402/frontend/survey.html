@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Optimal Survey</title>
+
+    <script src="functions.js" defer></script>
+
+</head>
+<body>
+    <!-- background shape -->
+    <div class="trapezoid"></div>
+    <div class="outline">
+
+        <!-- survey begins -->
+        <div class="child">
+            <h1>Optimal Group Survey</h1>
+            <div class="instruct">
+                <h3>Introduction</h3>
+                <p>This survey is to get a list of your top four preferred teammates within the class. Addtionally, the top two non-preferred teammates. 
+                    <br>To start, please enter your netid in the box:
+                </p>
+            </div>
+
+            <form method="post">
+                <!-- Enter netid -->
+                <div class="netid-group">
+                    <input class="netid-input" type="text" name="netid" id="netid" placeholder="netid" required>
+                    <span class="netid-addon" id="netid-addon">@iastate.edu</span>
+                </div> 
+
+                <!-- Next button -->
+                <div class="nextGroup">
+                    <button class="next-bttn" type="submit" id="nextBttn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
